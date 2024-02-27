@@ -1,0 +1,371 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.button {
+  @apply border border-gray-500 duration-200 hover:bg-gray-200 hover:text-black  rounded-md text-2xl  py-2 bg-gray-50  text-black placeholder-black/20 px-8;
+}
+.button2 {
+  @apply border-2 border-black rounded-2xl shadow-md px-6 py-2  hover:bg-gray-50 duration-200;
+}
+
+.flex-for-reg {
+  @apply flex gap-10 items-center;
+}
+
+.home-btn1 {
+  @apply bg-[#0277BD] border border-black duration-200 hover:bg-white hover:text-black text-white rounded-md text-2xl font-bold  py-2;
+}
+.home-btn2 {
+  @apply bg-gray-500 border border-gray-500 duration-200 hover:bg-gray-200 hover:text-black text-white rounded-md text-xl  py-2;
+}
+.app-nav {
+  @apply bg-gray-500 border border-gray-500 duration-200 hover:bg-white hover:text-black text-white;
+}
+.search-btn {
+  @apply border border-gray-500 duration-200 hover:bg-gray-200 hover:text-black  rounded-md text-xl  py-2 bg-gray-50  text-black placeholder-black/20 px-8;
+}
+.activeLink {
+  @apply text-green-400 px-8 h-[5rem] duration-200;
+}
+.normalLink {
+  @apply px-8 h-[5rem] duration-200 hover:text-black;
+}
+.layout {
+  @apply fixed left-0 top-0 right-0 z-30 bg-white w-full text-black shadow-lg text-lg font-Roboto rounded-2xl;
+}
+.text {
+  @apply text-base md:text-xl;
+}
+.text2 {
+  font-weight: 900;
+}
+.editField {
+  @apply shadow appearance-none border focus:border-blue-100 outline-none rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-100 duration-200 transition-all;
+}
+.nav2 {
+  @apply bg-white border-2 shadow-lg rounded-2xl flex flex-col 
+  justify-start w-full fixed top-[5.25rem] left-0  md:w-[20%] gap-10 h-screen overflow-hidden py-6 px-2;
+}
+
+.nav44 {
+  @apply bg-white border-2 shadow-lg rounded-2xl flex flex-col justify-start w-screen fixed md:relative  md:w-[20%] gap-10 h-screen overflow-auto py-6 px-2;
+}
+.link2 {
+  @apply font-normal text-lg md:text-lg font-Roboto hover:text-green-400;
+}
+.link22 {
+  @apply font-normal text-lg md:text-lg font-Roboto;
+}
+.activeLinkDashboard2 {
+  @apply text-green-400 link22 translate-x-3 font-bold;
+}
+.normalLinkDashboard2 {
+  @apply duration-200  link22 translate-x-3 hover:text-green-400;
+}
+.contentAddUser2 {
+  @apply w-[90%] h-[90%] rounded-3xl p-12  bg-white  font-Roboto  text-lg md:text-lg shadow-lg border-2;
+}
+.contentAddUserFlexible {
+  @apply w-[90%] h-auto rounded-3xl p-12  bg-white  font-Roboto  text-lg md:text-lg shadow-lg border-2;
+}
+.contentAddUserFlexible2 {
+  @apply w-[90%] h-auto rounded-3xl px-12 py-12 mt-12 bg-white  font-Roboto  text-lg md:text-lg shadow-lg border-2;
+}
+.contentAddUserFlexible33 {
+  @apply w-[90%] h-auto rounded-3xl px-12 py-12 mt-[10rem] bg-white  font-Roboto  text-lg md:text-lg shadow-lg border-2;
+}
+.courseDataMainTitle {
+  @apply text-2xl my-10 bg-yellow-200;
+}
+.contentAddUserFlexible3 {
+  @apply w-auto h-auto rounded-3xl px-12 py-12 mt-12 bg-white  font-Roboto  text-lg md:text-lg shadow-lg border-2;
+}
+.topNav {
+  @apply w-[90%] p-4   font-Roboto  text-lg md:text-lg;
+}
+.topNav2 {
+  @apply w-[90%]    font-Roboto  text-lg md:text-lg;
+}
+.inputAddUser2 {
+  @apply appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white duration-300 focus:border-gray-500 font-Roboto text-lg;
+  transition-property: background-color;
+}
+
+.grad-title {
+  @apply text-2xl font-extrabold col-span-2 grid gap-4 
+      grid-cols-2 md:col-span-3 md:text-3xl md:grid-cols-3 lg:text-4xl;
+}
+
+.grad-asm {
+  @apply text-2xl font-extrabold col-span-3 grid gap-4 
+      grid-cols-2 md:col-span-3 md:text-3xl md:grid-cols-3 lg:text-4xl;
+}
+
+.bg-gray-800 {
+  background-color: #2d3748;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.animation-slide-down {
+  animation: slide-down 0.3s ease-out;
+}
+
+@keyframes slide-down {
+  from {
+    transform: translateY(-8px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.hamburger {
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 3px;
+  top: 0;
+  left: 0;
+  background: #9c9aa6;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+@layer components {
+  .input-field {
+    @apply border w-full px-4 py-2;
+  }
+  .sub-btn {
+    @apply border text-white text-sm md:text-lg  bg-sky-500 rounded-xl shadow-md  px-8 py-3  text-center duration-300 hover:bg-sky-200 tracking-wide hover:text-black/100 w-[8rem];
+  }
+  .label-form {
+    @apply block tracking-wide text-gray-700 text-sm md:text-lg  mb-2;
+  }
+  .input-form {
+    @apply appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white duration-300 focus:border-gray-500;
+    transition-property: background-color;
+  }
+  .input-form-invalid {
+    @apply appearance-none  w-full py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white duration-300   bg-red-50 border border-red-500 text-red-900 placeholder-red-700 text-xl rounded focus:ring-red-500 focus:border-red-500 p-2.5 dark:bg-red-100 dark:border-red-400;
+    transition-property: background-color;
+  }
+  .input-formV2 {
+    @apply appearance-none block w-full duration-300  text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white  focus:border-gray-500;
+    transition-property: background-color;
+  }
+  .sameLineForm {
+    @apply appearance-none inline   duration-300  text-gray-700 rounded py-3 px-1 w-[5rem] mb-3 leading-tight focus:outline-none focus:bg-white  focus:border-gray-500;
+    transition-property: background-color;
+  }
+  .BloomTax {
+    @apply appearance-none w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white duration-300 focus:border-gray-500;
+    transition-property: background-color;
+  }
+  .choose-form {
+    @apply block w-full text-xl md:text-lg p-3   text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 bg-gray-200 block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white duration-300 focus:border-gray-500;
+  }
+  .main-form {
+    @apply mx-auto my-10 border-2 rounded-xl px-10 py-4 border-sky-500 pt-10  w-[95%] mx-auto  md:w-1/2 md:mx-auto;
+  }
+  .gen-btn {
+    @apply border text-white text-sm md:text-lg  bg-sky-500 rounded-xl shadow-md  px-8 py-3 my-10 text-center duration-300 hover:bg-sky-200 tracking-wide hover:text-black/100 w-[12rem];
+  }
+}
+.vertical-header {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.horizontal-header {
+  white-space: nowrap;
+}
+
+.table {
+  width: 100%;
+}
+
+th,
+td {
+  border-collapse: collapse;
+}
+
+th {
+  font-size: 14px;
+}
+
+td {
+  font-size: 16px;
+}
+.vertical {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.horizontal {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.fileView {
+  width: 100%;
+}
+
+.fileView__row {
+  height: 250px;
+  display: flex;
+  align-items: center;
+}
+
+.fileView__titles {
+  display: flex;
+  margin-bottom: 5px;
+  color: rgb(85, 78, 78);
+}
+
+.fileView__titles > div > * {
+  margin: 5px;
+  position: relative;
+}
+
+.fileView__titles--left {
+  flex: 1;
+}
+
+.fileView__titles--right {
+  display: flex;
+}
+.fileCard {
+  height: 190px;
+  width: 240px;
+  border-radius: 10px;
+  border: none;
+  margin: 5px;
+}
+
+.fileCard--top {
+  height: 70%;
+  border-bottom: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fileCard--bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 30%;
+}
+
+.fileCard--bottom > p {
+  width: 90%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.fileItem {
+  height: 55px;
+  border-bottom: 1px solid rgb(219, 219, 219);
+  border-top: 1px solid rgb(219, 219, 219);
+  width: 100%;
+  position: relative;
+}
+
+.fileItem > a {
+  height: 100%;
+  display: flex;
+  text-decoration: none;
+  color: rgb(85, 78, 78);
+}
+
+.fileItem > span {
+  height: 100%;
+  display: flex;
+  text-decoration: none;
+  color: rgb(85, 78, 78);
+}
+
+.fileItem > span > div {
+  display: flex;
+  align-items: center;
+}
+
+.fileItem > span > a {
+  display: flex;
+  align-items: center;
+}
+
+.fileItem > span > a > * {
+  margin: 10px;
+}
+
+.fileItem > span > div > * {
+  margin: 10px;
+}
+
+.fileItem > a > div {
+  display: flex;
+  align-items: center;
+}
+
+.fileItem > a > div > * {
+  margin: 10px;
+}
+
+.fileItem--left {
+  flex: 1;
+}
+img {
+  max-width: 100%;
+  height: 40px;
+}
+
+#myFileInput {
+  display: none;
+}
